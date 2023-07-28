@@ -22,14 +22,25 @@
             font-family: 'Rubik', sans-serif;
         }
     </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    backgroundImage: {
+                        'banner-pic': "url(  ')",
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
-    <header class="font-poppins ">
+    <header class="w-full h-screen bg-base-200">
         <!-- Navbar -->
         <nav>
             <div class="flex justify-center">
-                <div class="navbar bg-base-100">
+                <div class="navbar">
                     <div class="navbar-start">
                         <div class="dropdown">
                             <label tabindex="0" class="btn btn-ghost md:hidden">
@@ -71,7 +82,39 @@
                 </div>
             </div>
         </nav>
-
+        <!-- Banner section -->
+        <div class=" bg-left-top bg-no-repeat" style="background-image: url(./images/banner.png);">
+            <div class="pl-14">
+                <button class="btn bg-[#F8F9FE] text-[#69B99D] ">REAL ESTATE</button>
+            </div>
+            <!-- Hero -->
+            <div class="pl-14">
+                <div class="py-5 font-rubik ">
+                    <h1 class="text-4xl font-semibold">Let's hunt for your <br> dream residence</h1>
+                </div>
+                <div class="font-poppins">
+                    <div>
+                        <p class="py-3 font-normal	text-xs text-left">Explore our range of beautiful properties with the
+                            addition of <br>
+                            separate
+                            accommodation
+                            suitable for
+                            you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="pl-14">
+                <div class="dropdown dropdown-end">
+                    <label tabindex="0" class="btn btn-ghost rounded-btn">Dropdown</label>
+                    <button class="btn bg-[#F8F9FE] text-[#69B99D]git ">button</button>
+                    <ul tabindex="0" class="menu dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52 mt-4">
+                        <li><a>Item 1</a></li>
+                        <li><a>Item 2</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
 
